@@ -73,9 +73,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 40px;     
+    gap: 40px;     /* LESS SPACE BETWEEN LEFT & RIGHT */
 }
-    
 
 /* LEFT SIDE */
 .hero-left h1 {
@@ -887,13 +886,21 @@ body {
 }
 
 .highlight {
-    color: #00dfc4;
+    color: #0ebeaa;
     font-weight: 600;
 }
 
+.community-card a{
+    color: #1de7cf;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
 
+.community-card a:hover {
+    color: #41ffd6;
+    text-decoration:solid;
 
-/* CONTACT SECTION */
+}
 .contact-section {
     padding: 80px 60px;
     background: #062c3c;
@@ -985,12 +992,12 @@ body {
 }
 
 .cert-img-row img {
-    width: 31%;
+    width: 27%;
     height: 160px;
     object-fit: contain;
     border-radius: 12px;
     /* border: 0.2px solid #00dfc4; */
-    background: #062c3c;
+    background: #69b0ce;
 }
 
 /* TEXT */
@@ -1155,13 +1162,13 @@ body {
             <!-- Buttons -->
             <div class="buttons">
                 <a class="btn-outline" href="https://linkedin.com/in/ajfaisal002" target="_blank">LinkedIn</a>
-                <a class="btn" href="/mnt/data/Adnan_Faisal_CV.pdf" >Preview Resume</a>
+                <a class="btn" href="https://drive.google.com/file/d/1VLx--GztflM1XLzyS2QS7vqT7d-Q3-P2/view?usp=sharing" target="_blank">Preview Resume</a>
             </div>
 
         </div>
 
         <div class="hero-right">
-            <img src="/images/me.png" alt="Profile Image">
+            <img src="me.png" alt="Profile Image">
         </div>
 
     </div>
@@ -1552,7 +1559,7 @@ body {
     <h2 class="ach-title">Certifications & Achievements</h2>
 
     <!-- CARD 1 -->
-    <a href="YOUR_CERTIFICATE_FOLDER_LINK" target="_blank" class="ach-card">
+    <a href="https://drive.google.com/drive/folders/1YPOOCc2Nq0ZxWefXylsTLgxAliWY9X6k" target="_blank" class="ach-card">
         <div class="ach-icon">
             <i class="fa-solid fa-medal"></i>
         </div>
@@ -1565,7 +1572,7 @@ body {
     </a>
 
     <!-- CARD 2 -->
-    <a href="YOUR_CERTIFICATE_FOLDER_LINK" target="_blank" class="ach-card">
+    <a href="https://drive.google.com/drive/folders/1YPOOCc2Nq0ZxWefXylsTLgxAliWY9X6k" target="_blank" class="ach-card">
         <div class="ach-icon">
             <i class="fa-solid fa-code"></i>
         </div>
@@ -1578,7 +1585,7 @@ body {
     </a>
 
     <!-- CARD 3 -->
-    <a href="YOUR_CERTIFICATE_FOLDER_LINK" target="_blank" class="ach-card">
+    <a href="https://drive.google.com/drive/folders/1YPOOCc2Nq0ZxWefXylsTLgxAliWY9X6k" target="_blank" class="ach-card">
         <div class="ach-icon">
             <i class="fa-solid fa-people-group"></i>
         </div>
@@ -1591,7 +1598,7 @@ body {
     </a>
 
     <!-- CARD 4 -->
-    <a href="YOUR_CERTIFICATE_FOLDER_LINK" target="_blank" class="ach-card">
+    <a href="https://drive.google.com/drive/folders/1YPOOCc2Nq0ZxWefXylsTLgxAliWY9X6k" target="_blank" class="ach-card">
         <div class="ach-icon">
             <i class="fa-solid fa-laptop-code"></i>
         </div>
@@ -1604,7 +1611,7 @@ body {
     </a>
 
     <!-- CARD 5 -->
-    <a href="YOUR_CERTIFICATE_FOLDER_LINK" target="_blank" class="ach-card">
+    <a href="https://drive.google.com/drive/folders/1YPOOCc2Nq0ZxWefXylsTLgxAliWY9X6k" target="_blank" class="ach-card">
         <div class="ach-icon">
             <i class="fa-solid fa-flag-checkered"></i>
         </div>
@@ -1659,14 +1666,14 @@ body {
                     <strong>CodeForces:</strong>
                     Max Rating: <span class="highlight">1157</span>,
                     Solved Problems: <span class="highlight">240+</span><br>
-                    Handle: <span class="highlight">AJFaisal</span>
+                    Handle: <span class="highlight"><a href="https://codeforces.com/profile/AJFaisal" target="_blank">AJFaisal</a></span>
                 </li>
 
                 <li style="margin-top:20px;">
                     <strong>beecrowd:</strong>
                     Ranking: <span class="highlight">Top 3%</span>,
                     Solved Problems: <span class="highlight">130+</span><br>
-                    Handle: <span class="highlight">AJFaisal002</span>
+                    Handle: <span class="highlight"> <a href="https://judge.beecrowd.com/en/profile/621426" target="_blank">AJFaisal002</a></span>
                 </li>
                 
             </ul>
@@ -1686,9 +1693,9 @@ body {
 
         <!-- 3 Certificate Images Side-by-Side -->
         <div class="cert-img-row">
-            <img src="/images/certificate.png" alt="Certificate 1">
-            <img src="/images/certificate2.png" alt="Certificate 2">
-            <img src="/mnt/data/b514ddf4-51b4-4628-a643-85a36327166e.png" alt="Certificate 3">
+            <img src="certificate.png" alt="Certificate 1">
+            <img src="certificate2.png" alt="Certificate 2">
+            <img src="certificate3.png" alt="Certificate 3">
         </div>
 
         <!-- Text Content -->
@@ -1967,4 +1974,3 @@ document.addEventListener("scroll", () => {
 
 </body>
 </html>
-
