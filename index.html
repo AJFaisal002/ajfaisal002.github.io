@@ -1115,6 +1115,82 @@ body {
     letter-spacing: 0.5px;
 }
 
+/* ===================== THESIS SECTION ===================== */
+.thesis-section {
+    padding: 40px 30px;
+    background: #062c3c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.thesis-title {
+    font-size: 38px;
+    color: #00dfc4;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+/* CARD */
+.thesis-card {
+    max-width: 900px;
+    background: rgba(7, 54, 68, 0.45);
+    padding: 35px 40px;
+    border-radius: 16px;
+
+    border-left: 6px solid #00dfc4;
+
+    box-shadow:
+        0 2px 27px rgba(0,255,240,0.15),
+        inset 0 0 12px rgba(0,255,240,0.08);
+
+    backdrop-filter: blur(10px);
+
+    opacity: 0;
+    transform: translateY(40px);
+    transition: 0.7s ease;
+}
+
+/* SHOW ANIMATION */
+.thesis-card.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.thesis-name {
+    font-size: 22px;
+    color: #eaffff;
+    margin-bottom: 10px;
+}
+
+.thesis-date {
+    font-size: 15px;
+    color: #9df6ff;
+    margin-bottom: 10px;
+}
+
+.thesis-supervisor {
+    font-size: 16px;
+    color: #c7f7ff;
+    margin-bottom: 15px;
+}
+
+.thesis-desc {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #d8f6ff;
+}
+
+/* CENTER THE SERVICE CARD */
+#service .pub-timeline {
+    display: flex;
+    justify-content: center;
+}
+
+#service .pub-item {
+    width: 150%;
+    max-width: 1200px;
+}
 
 </style>
 </head>
@@ -1130,7 +1206,7 @@ body {
             <li><a href="#hero">Home</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#education">Education</a></li>
-            
+            <li><a href="#thesis">Thesis</a></li>
             <li><a href="#skills">Skills</a></li>
              <li><a href="#publications">Publications</a></li>
             <li><a href="#projects">Projects</a></li>
@@ -1281,7 +1357,8 @@ body {
         <h3>Chittagong University of Engineering and Technology (CUET)</h3>
         <p class="degree">Bachelor of Science in Computer Science and Engineering (CSE), Chattogram, Bangladesh</p>
         <p class="location"></p>
-        <p class="year">Final Year (Ongoing) — CGPA: 3.67 (Upto 7th Semester)</p>
+        <p class="year">June 2026 — CGPA: 3.70</p>
+        
     </div>
 
     <!-- Card 2 -->
@@ -1300,6 +1377,32 @@ body {
         <p class="degree">Secondary School Certificate (SSC), Science, Chattogram, Bangladesh</p>
         <p class="location"></p>
         <p class="year">2018 - GPA: 5.00 </p>
+    </div>
+
+</section>
+
+<section id="thesis" class="thesis-section">
+
+    <h2 class="thesis-title">Undergraduate Thesis</h2>
+
+    <div class="thesis-card">
+        
+        <h3 class="thesis-name">
+            A Cross-Modal Fusion Framework for Detecting Misleading Videos
+        </h3>
+
+        <p class="thesis-date">
+            30<sup>th</sup> June 2026
+        </p>
+
+        <p class="thesis-supervisor">
+            <strong>Supervisor:</strong> Md. Mynul Hasan, Assistant Professor, Department of CSE, CUET
+        </p>
+
+        <p class="thesis-desc">
+            Developed a hierarchical multimodal AI framework to detect AI-generated misleading videos that threaten public trust in social media platforms through fake identities, manipulated content and synthetic scenes. Integrated vision, speech and text using cross-modal fusion with explainable AI.
+        </p>
+
     </div>
 
 </section>
@@ -1406,9 +1509,53 @@ body {
 
     <div class="pub-timeline">
 
-        <div class="pub-item">
+        
+<!-- PUBLICATION 5 -->
+<div class="pub-item">
     <div class="pub-left">
         <div class="pub-number-box">1</div>
+        <div class="pub-connector"></div>
+    </div>
+
+    <div class="pub-content">
+        <h3>
+            Disentangling Logical Validity from Semantic Plausibility through Canonical Abstraction
+        </h3>
+
+        <p>
+            Proposed a canonical abstraction framework to disentangle logical validity from semantic plausibility, reducing spurious correlations in NLP reasoning. <br>
+            <strong>1<sup>st</sup> Author</strong> — Proceedings of the 20<sup>th</sup> International Workshop on Semantic Evaluation (SemEval-2026), 
+            Association for Computational Linguistics (ACL), July 2026.
+        </p>
+
+        <p class="pub-status">Accepted for publication.</p>
+    </div>
+</div>
+
+<!-- PUBLICATION 6 -->
+<div class="pub-item">
+    <div class="pub-left">
+        <div class="pub-number-box">2</div>
+        <div class="pub-connector"></div>
+    </div>
+
+    <div class="pub-content">
+        <h3>
+            Invariance-Oriented Representation Learning for Robust AI-Generated Code Detection
+        </h3>
+
+        <p>
+            Proposed an invariance-based representation learning approach for robust detection of AI-generated code under distributional shifts. <br>
+            <strong>2<sup>nd</sup> Author</strong> — Proceedings of the 20<sup>th</sup> International Workshop on Semantic Evaluation (SemEval-2026), 
+            Association for Computational Linguistics (ACL), July 2026.
+        </p>
+
+        <p class="pub-status">Accepted for publication.</p>
+    </div>
+</div>
+        <div class="pub-item">
+    <div class="pub-left">
+        <div class="pub-number-box">3</div>
         <div class="pub-connector"></div>
     </div>
 
@@ -1418,9 +1565,9 @@ body {
         </h3>
 
         <p>
-            Developed a LangChain-based framework for generating investigative questions using Large Language Models (LLMs). <br>
+            Developed a LangChain-powered question generation pipeline using LLMs to support news credibility assessment in the TREC 2025 DRAGUN Track. <br>
 
-            1<sup>st</sup> Author — The 34th Text REtrieval Conference (TREC 2025),
+            <strong>1<sup>st</sup> Author</strong> — The 34th Text REtrieval Conference (TREC 2025),
             DRAGUN Track, organized by NIST (National Institute of Standards and Technology, USA),
             March 2026.
         </p>
@@ -1436,16 +1583,17 @@ body {
           <!-- PUBLICATION 3 -->
         <div class="pub-item">
             <div class="pub-left">
-                <div class="pub-number-box">2</div>
+                <div class="pub-number-box">4</div>
                 <div class="pub-connector"></div>
             </div>
 
             <div class="pub-content">
-                <h3>Team_Luminaries_0227@LT-EDI-2025: A Transformer-Based Fusion Approach to Misogyny Detection in Chinese Memes</h3>
+                <h3>A Transformer-Based Fusion Approach to Misogyny Detection in Chinese Memes</h3>
                 <p>
-                    A Transformer-Based Fusion Approach by developing a multimodal model for detecting misogynistic content in Chinese Memes. <br> 
+                    Built a multimodal meme detection system using Chinese BERT and VGG16, achieving 3rd place with a 0.90 macro F1 score in an ACL shared task. <br> 
+                    
                    
-                    1<sup>st</sup> Author — LT-EDI 2025 (ACL Workshop), September 2025.
+                    <strong>1<sup>st</sup> Author</strong> — LT-EDI 2025 (ACL Workshop), September 2025.
                     
                 </p>
                <span class="avail-text">🔗 Read full paper:</span>
@@ -1458,17 +1606,16 @@ body {
         <!-- PUBLICATION 2 -->
         <div class="pub-item">
             <div class="pub-left">
-                <div class="pub-number-box">3</div>
+                <div class="pub-number-box">5</div>
                 <div class="pub-connector"></div>
             </div>
 
             <div class="pub-content">
                 <h3>Think Tank: A Home Appliance and Vehicle Repair Assistance Smartphone Application With Technician Hiring and Repair Schedule Booking Features </h3>
                 <p>
-                    A Home Appliance & Vehicle Repair Assistance Smartphone Application  
-                    with Technician Hiring & Repair Scheduling Features. <br>
+                    Built a Home Appliance and Vehicle Repair Assistance Smartphone Application for repair services featuring technician hiring, scheduling, fraud detection and marketplace support, with strong positive user feedback. <br>
 
-                    2<sup>nd</sup> Author — Published in IEEE OTCON 2025, July 2025.
+                    <strong>2<sup>nd</sup> Author</strong> — Published in IEEE OTCON 2025, July 2025.
                 </p>
                 <span class="avail-text">🔗 Read full paper:</span>
                 <a href="https://ieeexplore.ieee.org/document/11070814/" target="_blank">
@@ -1482,17 +1629,17 @@ body {
         <!-- PUBLICATION 1 -->
         <div class="pub-item">
             <div class="pub-left">
-                <div class="pub-number-box">4</div>
+                <div class="pub-number-box">6</div>
                 <div class="pub-connector"></div>
                 
             </div>
 
             <div class="pub-content">
                 
-                <h3>Team ML_Forge@DravidianLangTech 2025: Multimodal Hate Speech Detection in Dravidian Languages</h3>
+                <h3>Multimodal Hate Speech Detection in Dravidian Languages</h3>
                 <p>
-                    Team ML Forge @ DravidianLangTech 2025: Multimodal Hate Speech Detection in Dravidian Languages. <br> 
-                    1<sup>st</sup> Author — NAACL 2025 Shared Task — ACL, May 2025.
+                   Developed a multimodal fusion approach integrating textual and acoustic representations to enhance generalization in hate speech detection.<br> 
+                    <strong>1<sup>st</sup> Author</strong> — NAACL 2025 Shared Task — ACL, May 2025.
                 </p>
                 <span class="avail-text">🔗 Read full paper:</span>
                 <a href="https://aclanthology.org/2025.dravidianlangtech-1.68/" target="_blank">
@@ -1504,6 +1651,92 @@ body {
     </div>
 
 </section>
+
+<section id="research-instructor" class="pub-section">
+
+    <h2 class="pub-title">Research Instructor Experience</h2>
+
+    <div class="pub-timeline">
+
+        <!-- ITEM 1 -->
+        <div class="pub-item">
+            <div class="pub-left">
+                <div class="pub-number-box">1</div>
+                <div class="pub-connector"></div>
+            </div>
+
+            <div class="pub-content">
+                <h3>
+                    Multimodal Hate Speech Detection in Low-Resource Nepali Memes Using Vision–Language Models
+                </h3>
+
+                <p>
+                    Contributed as a Research Instructor in developing a multimodal system to improve performance for hate speech detection in low-resource Nepali memes. <br>
+                    <strong>Research Instructor & Author</strong> — CHiPSAL 2026 (LREC 2026 Workshop), May 2026.
+                </p>
+
+                     <span class="avail-text">🔗 Read full paper:</span>
+                <a href="https://lrec.elra.info/lrec2026-ws-chipsal-23" target="_blank">
+                     lrec.elra.info
+                </a>
+            </div>
+        </div>
+
+        <!-- ITEM 2 -->
+        <div class="pub-item">
+            <div class="pub-left">
+                <div class="pub-number-box">2</div>
+                <div class="pub-connector"></div>
+            </div>
+
+            <div class="pub-content">
+                <h3>
+                    Multimodal Stance and Target Identification in Dravidian Political Memes
+                </h3>
+
+                <p>
+                    Contributed as a Research Instructor in building a multimodal framework to enhance understanding for stance and target identification in political memes. <br>
+                    <strong>Research Instructor & Author</strong> — DravidianLangTech 2026 (ACL Workshop), July 2026.
+                </p>
+
+                <p class="pub-status">Accepted for publication.</p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="service" class="pub-section">
+
+    <h2 class="pub-title">Professional Service</h2>
+
+    <div class="pub-timeline">
+
+        <div class="pub-item">
+            <div class="pub-left">
+                <!-- <div class="pub-number-box">1</div> -->
+            </div>
+
+            <div class="pub-content">
+                <h3>Invited Reviewer</h3>
+
+                <p>
+                    Reviewed <strong>5</strong> papers for the Association for Computational Linguistics (ACL) and the Association for Computing Machinery (ACM) conferences in NLP and multimodal AI research evaluation.
+                </p>
+
+                <p>
+                    1. ACL 2026 — The 20th International Workshop on Semantic Evaluation (SemEval Task 11) (2 Papers)<br>
+                    2. ACL 2026 — DravidianLangTech-2026: Sixth Workshop on Speech, Vision, and Language Technologies for Dravidian Languages (2 Papers)<br>
+                    3. ACM ICMI 2026 — Cross-Cultural Misogynistic Meme Detection (CC-MMD) Challenge (1 Paper)
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
@@ -2142,6 +2375,23 @@ document.addEventListener("scroll", () => {
     if (pos < window.innerHeight - 120) {
         card.classList.add("active");
     }
+});
+
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    const thesisCard = document.querySelector(".thesis-card");
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("show");
+            }
+        });
+    }, { threshold: 0.2 });
+
+    if (thesisCard) observer.observe(thesisCard);
 });
 </script>
 
