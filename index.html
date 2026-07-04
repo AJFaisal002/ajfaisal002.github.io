@@ -2273,7 +2273,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 observer.unobserve(entry.target);  // after showing, stop observing
             }
         });
-    }, { threshold: 0.15 });
+    }, { threshold: 0.2 });
 
     skillCards.forEach((card) => observer.observe(card));
 });
@@ -2288,7 +2288,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 obs.unobserve(entry.target);
             }
         });
-    }, { threshold: 0.15 });
+    }, { threshold: 0.2 });
 
     cards.forEach(card => obs.observe(card));
 });
